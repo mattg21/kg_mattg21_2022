@@ -23,8 +23,9 @@ function int_to_string(m_args)  {
         } return my_converted 
         
     }catch(err) {
-        console.log(err)
+        console.log("Invalid argument")
     }
 }
 
 const myString = int_to_string(my_args)
+console.log(myString)
