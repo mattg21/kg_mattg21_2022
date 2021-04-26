@@ -13,7 +13,7 @@ function int_to_string(m_args)  {
             for (j = 0; j < int_to_convert.length; j++) {
                 curr_string += number_to_phonetic[int_to_convert[j]]    
             }
-            
+
             if (i == m_args.length - 1) {
                 my_converted += curr_string 
             }else {
@@ -21,8 +21,10 @@ function int_to_string(m_args)  {
             }
             
         } return my_converted 
+        
+    }catch(err) {
+        console.log(err)
     }
 }
-console.log(my_args)
+
 const myString = int_to_string(my_args)
-console.log(myString)
